@@ -1,0 +1,514 @@
+1.Positive or Negative
+
+import java.io.*;
+public class posNegZer {
+	public static void main(String[] args) {
+		int b;
+		b=Integer.parseInt(args[0]);
+				if(b>0)
+				{
+					System.out.println("positive");;
+				}
+				else if(b<0)
+				{
+					System.out.println("negative");
+				}
+				else
+				{
+					System.out.println("zero");
+				}
+	}
+}
+
+
+2.Even or Odd
+ 
+public class evenOdd {
+	public static void main(String[] args) {
+		int b;
+		b=Integer.parseInt(args[0]);
+				if(b%2==0)
+				{
+					System.out.println("even");;
+				}
+				else
+				{
+					System.out.println("odd");
+				}
+				}
+	}
+
+3.Comma
+
+import java.io.*;
+public class store {
+	public static void main(String[] args ){
+		int i,l=args.length;
+	if(l==0){
+		
+		System.out.println("not values");
+	}
+	else
+	{ if(l%2!=0){
+		for(i=0;i<l-1;i=i+2){
+	System.out.print(args[i] +"," +args[i+1] +",");
+		}
+		System.out.print(args[l-1]);
+	}else{
+		System.out.print(args[0]);
+		for(i=1;i<=l-1;i=i+1){
+			System.out.print("," +args[i] );
+				}
+	}
+	}
+}
+}
+
+4.Alphabet
+
+mport java.io.*;
+import java.util.Scanner;
+public class character {
+
+		public static void main(String[] args) {
+			Scanner s=new Scanner(System.in);
+			char ch1,ch2;
+			ch1=s.next().charAt(0);
+                        ch2=s.next().charAt(0);
+                        if(ch1>ch2){
+                        System.out.println(ch2+","+ch1);
+                        }else{
+                         System.out.println(ch1+","+ch2);
+                         }
+                         }
+                         }
+			
+5.Alphabet,Digit,SpecialCharacter
+
+import java.io.*;
+import java.util.Scanner;
+public class character {
+
+		public static void main(String[] args) {
+			Scanner s=new Scanner(System.in);
+			char ch;
+			ch=s.next().charAt(0);
+			if((ch>=65&&ch<=90)||(ch>=97&&ch<=127))
+            {
+	             System.out.print("alphabet");;
+	        }
+			else if((ch>=48&&ch<=57))
+			{
+				System.out.print("digit");
+			}
+			else
+			{
+				System.out.print("special character");
+			}
+		}
+		}
+
+6.Interest
+
+import java.io.*;
+public class interest{
+public static void main(String[]args){
+                   String gender=args[0];
+                   int age=Integer.parseInt(args[1]);
+                   if((gender.equals("male"))&&(age>=1)&&(age<=60)){
+                   System.out.println("Interest:9.2%");
+                   }else  if((gender.equals("male"))&&(age>=61)&&(age<=120)){
+                    System.out.println("Interest:8.3%");
+                    }else  if((gender.equals("female"))&&(age>=1)&&(age<=58)){
+                    System.out.println("Interest:8.2%");
+                    }else  if((gender.equals("female"))&&(age>=59)&&(age<=120)){
+                    System.out.println("Interest:7.6%");
+                    }else{
+                    System.out.println("Invalid");
+                    }
+                    }
+                    }
+                   
+7.Upper Case and Lower Case
+
+import java.io.*;
+public class UpperLower {
+		public static void main(String[] args) {
+			String b=args[0];
+			char ch=b.charAt(0);
+			if(ch>=65&&ch<=90)
+			{
+				String c=args[0].toLowerCase();	
+				System.out.println(args[0]+":"+ c);
+			}
+			else if(ch>=97&&ch<=122){
+
+			String c=args[0].toUpperCase();
+			System.out.println(args[0]+":"+ c );
+	}
+	}
+}
+8.Colours
+
+import java.io.*;
+import java.util.Scanner;
+public class colour {
+
+		public static void main(String[] args) {
+			//Scanner s=new Scanner(System.in);
+			String s=args[0];
+			System.out.println(s);
+			switch(s){
+			case "R":
+			System.out.println("Red");
+			break;
+			case "O":
+			System.out.println("Orange");
+			break;
+			case "B":
+			System.out.println("Blue");
+			break;
+			case "G":
+			System.out.println("Green");
+			break;
+			case "Y":
+			System.out.println("Yellow");
+			break;
+			case "W":
+			System.out.println("White");
+			break;
+			default:
+			System.out.println("Invalid code");
+			}
+			}
+9.Month
+
+import java.io.*;
+import java.util.Scanner;
+public class month {
+
+		public static void main(String[] args) {
+			int l;
+			l=args.length;
+			if(l==0){
+			System.out.println("please enter the month");
+			}else{
+			int s=Integer.parseInt(args[0]);
+			switch(s){
+			case 1:
+			System.out.println("Jan");
+			break;
+			case 2:
+			System.out.println("feb");
+			break;
+			case 3:
+			System.out.println("mar");
+			break;
+			case 4:
+			System.out.println("apr");
+			break;
+			case 5:
+			System.out.println("may");
+			break;
+			case 6:
+			System.out.println("June");
+			break;
+			case 7:
+			System.out.println("Jul");
+			break;
+			case 8:
+			System.out.println("aug");
+			break;
+			case 9:
+			System.out.println("sep");
+			break;
+			case 10:
+			System.out.println("oct");
+			break;
+			case 11:
+			System.out.println("nov");
+			break;
+			case 12:
+			System.out.println("dec");
+			break;			
+			default:
+			System.out.println("invalid");
+			}
+			}
+			}
+						}
+10.1 to 10 numbers single Row
+
+import java.io.*;
+public class row{
+	public static void main(String[] args) {
+		int i;
+	for(i=1;i<10;i++)
+            {
+			System.out.print(i);
+			System.out.print("\t");
+		    }
+		}
+}
+11.23 to 57 even numbers
+
+import java.io.*;
+public class even {
+	public static void main(String[] args) {
+		int i;
+	for(i=23;i<57;i++)
+         {
+	if(i%2==0)
+	{
+	System.out.print(i);
+	System.out.print("\t");
+        }
+         }
+}
+}
+12.prime
+
+import java.io.*;
+import java.util.Scanner;
+public class prime {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int a,i,p=0;
+		a=s.nextInt();		
+		for(i=1;i<=a;i++)
+		{
+		if(a%i==0)
+		{
+			p++;
+		}
+		
+		}
+		if(p==2)
+		{
+			System.out.print("prime");
+		}
+		else
+		{
+			System.out.print("not prime");
+		}
+	}
+
+}
+
+13.10 to 99 prime number 
+
+import java.io.*;
+public class prime {
+	public static void main(String[] args) {
+		int a=0,i=0,p;
+		String  a1 = "";
+		for(a=10;a<=99;a++)
+		{
+		p=0;
+
+					for(i=a; i>=1; i--)
+					{
+						if(a%i==0)
+					    {
+						p++;
+						}
+					}
+					if(p==2)
+					  {
+						a1= a1 +a + " ";
+					  }
+				}
+		
+	      System.out.println("primeNumbers");
+	      System.out.println(a1);  
+
+		}
+
+	}
+14.Prime or not
+
+import java.io.*;
+import java.util.Scanner;
+public class palindrome{
+public static void main(String[]args){
+                  Scanner s=new Scanner(System.in);
+		int a,i,p=0;
+		a=s.nextInt();			
+		for(i=1;i<=a;i++)
+		{
+		if(a%i==0)
+		{
+			p++;
+		}
+		
+		}
+		if(p==1||p==0){
+		System.out.println("prime or composite number");
+		}
+		else if(p==2)
+		{
+			System.out.print("prime");
+		}
+		else
+		{
+			System.out.print("not prime");
+		}
+	}
+	}
+15.Addition
+
+import java.io.*;
+import java.util.Scanner;
+public class character {
+
+		public static void main(String[] args) {
+			Scanner s=new Scanner(System.in);
+			int a,b,c,count=0,sum=0;
+			a=s.nextInt();
+			for(b=a;b!=0;b=b/10){
+			count++;
+			}
+			for(int i=0;i<count;i++){
+			c=a%10;
+			a=a/10;
+			sum=sum+c;
+			}
+                         System.out.println(sum);
+                         }
+                         }
+16.Star
+
+import java.io.*;
+public class star {
+	public static void main(String[] args) {
+		int n,i,j,l;
+		l=args.length;
+		if(l==0){
+			System.out.println("please enter the number");
+		}else{
+		n=Integer.parseInt(args[0]);
+		for(i=1;i<=n;i++)
+		{
+			System.out.println();	
+			for(j=1;j<=i;j++)
+			{
+				System.out.print("*");	
+			}
+		}
+		}
+}
+}
+17.Reverse
+
+public class argument {
+	public static void main(String[] args){
+	int a,n=0,i,b;
+	a=Integer.parseInt(args[0]);
+		while(a!=0)
+		{   
+			b=a%10;
+			a=a/10;
+			System.out.print(b);
+	    }
+		
+	}
+	}
+
+18.Palindrome
+
+import java.io.*;
+public class palindrome{
+public static void main(String[]args){
+                   int count=0;
+                   int l=args.length;
+                   int []a1=new int[l];
+                   int []a2=new int[l];
+                   int a=Integer.parseInt(args[0]);
+                   int b;
+                   int i=0;
+                   while(i<l){
+                   a1[i]=a%10;
+                   a=a/10;
+                   i++;
+                   }
+                   int j=l-1;
+                   while(j>=0){
+                   a2[j]=a%10;
+                   a=a/10;
+                   j--;
+                   }
+                   i=0;
+                   while(i<l){
+                           if(a1[i]==a2[i]){
+                           count++;
+                           }
+                           i++;
+                          }
+                         while(count==l){
+                         System.out.println("palindrome");
+                         break;
+                         }while(count!=l){
+                         System.out.println("not palindrome");
+                         break;
+                          }
+                          }
+                          }
+                   
+19.Divisible 
+
+public class argument {
+	public static void main(String[] args){
+	 int l=args.length;
+	 int []a=new int[l];
+	 int i=1;
+	 int n=Integer.parseInt(args[0]);//how many numbers to print
+	 int mul=1,div=1;
+	 do
+	 {
+		 a[i]=Integer.parseInt(args[i]);
+		 mul=mul*a[i];
+		 i++;
+	 }while(i<l);
+	 div=mul;
+	 int j=1;
+	 do{
+		 div=mul*j;
+		 j++;
+		 System.out.println(div);
+	 }while(j<=n);	 
+	}
+	}
+
+20.Add and Sub
+
+import java.io.*;
+import java.util.Scanner;
+public class addsub{
+public static void main(String[] args){
+            int a,a1,a2;
+            char ch;
+            Scanner s=new Scanner(System.in);
+             
+          do{
+               System.out.println( "enter the two numbers:"); 
+               a1=s.nextInt();
+               a2=s.nextInt();
+               System.out.println( "enter the option:");
+               a=s.nextInt();  
+               switch(a){
+               case 1:
+               System.out.println( "Addition of two numbers:"+(a1+a2)); 
+               break;
+               case 2:
+               System.out.println( "subtraction of two numbers:"+(a1-a2)); 
+               break;
+               default:
+               System.out.println( "Invalid of two numbers");
+               }             
+             ch=s.next().charAt(0);	
+             }while(ch=='y' || ch=='Y');
+             System.out.println( "loop terminated");
+             }
+             }
+             
+             
